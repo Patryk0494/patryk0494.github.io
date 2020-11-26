@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="container" id="topContainer">
+            <div class="logo"></div>
+        </div>
+        <div class="container">
+            <div class="mainContent-container">
+                <div class="mainContent-income">
+                    <h2>Przychody</h2>
+                    <div class="mainContent-income-inputs">
+                        <input class="income-name" id="income-name" type="text" placeholder="nazwa przychodu">
+                        <input class="income-val" id="income-val" type="number" placeholder="kwota przychodu">
+                        <button class="addBtn" id="income-addBtn" onclick="onInAddBtnClicked()">Dodaj</button>
+                    </div>
+                    <div class="mainContent-income-list" id="mainContent-income-list"></div>
+                    <p class="mainContent-sum">Suma przychodów: <span id="incomeSum"></span></p>
+                </div>
+                <div class="mainContent-outcome">
+                    <h2>Wydatki</h2>
+                    <div class="mainContent-outcome-inputs">
+                        <input class="outcome-name" id="outcome-name" type="text" placeholder="nazwa wydatku">
+                        <input class="outcome-val" id="outcome-val" type="number" placeholder="kwota wydatku">
+                        <button class="addBtn" id="outcome-addBtn" onclick="onOutAddBtnClicked()">Dodaj</button>
+                    </div>
+                    <div class="mainContent-outcome-list" id="mainContent-outcome-list"></div>
+                    <p class="mainContent-sum">Suma wydatków: <span id="outcomeSum"></span> </p>
+                </div>
+            </div>
+        </div>
+    </main> 
+    <script src="index.js"></script>
+</body>
+</html>
