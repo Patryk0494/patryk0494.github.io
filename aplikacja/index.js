@@ -74,7 +74,7 @@ function onEditBtnClicked(event){
     container.innerHTML =`
             <input class="edited-name" id="edited-name" type="text" value="${inOutData[indexElem].name}" placeholder="nazwa przychodu">
             <input class="edited-val" id="edited-val" type="number" value="${inOutData[indexElem].value}" placeholder="kwota przychodu">
-            <button class="addBtn" id="edited-addBtn">Dodaj</button>
+            <button class="newAddBtn" id="edited-addBtn">Dodaj</button>
         `; 
     const editedAddBtn = document.getElementById("edited-addBtn")
     editedAddBtn.addEventListener("click", function() {

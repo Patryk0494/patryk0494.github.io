@@ -28,8 +28,14 @@ h2 {
 }
 
 .container {
-    width: 1070px;
+    width: 90%;
     margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 1070px;  
+    }
 }
 
 .mainContent-container {
